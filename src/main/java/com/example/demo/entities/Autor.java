@@ -20,5 +20,18 @@ public class Autor {
     private Date dataNascimento;
     @Column(length=200)
     private String biografia;
+
+    public Autor() {
+    }
+
+    // Construtor parametrizado
+    public Autor(Long idAutor, String nome, String nacionalidade, Date dataNascimento, String biografia) {
+        this.idAutor = idAutor;
+        this.nome = nome;
+        this.nacionalidade = nacionalidade;
+        this.dataNascimento = dataNascimento;
+        this.biografia = biografia;
+    }
+
 }
 

@@ -14,4 +14,17 @@ public class Reserva {
     private String livro;
     private String usuario;
 
+
+
+    public  Reserva(){}
+
+    public  Reserva(Long idReserva,Date dataReserva,String status, String livro,String usuario){
+
+        this.idReserva=idReserva;
+        this.dataReserva=dataReserva;
+        this.status=status;
+        this.livro=livro;
+        this.usuario=usuario;
+    }
+
 }

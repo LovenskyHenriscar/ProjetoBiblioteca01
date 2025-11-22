@@ -14,7 +14,23 @@ public class Biblioteca {
     private String  nome;
     private String endereco;
     private Integer telefone;
-    private  List listaDeLivros;
-    private List listaDeUsuarios;
-    private  List funcionarios;
+    private  List<Livro> listaDeLivros;
+    private List<Usuario> listaDeUsuarios;
+    private  List<Funcionario> listaDeFuncionarios;
+
+    public Biblioteca() {
+    }
+
+    // Construtor parametrizado
+    public Biblioteca(Long idBiblioteca, String nome, String endereco, Integer telefone,
+                      List<Livro> listaDeLivros, List<Usuario> listaDeUsuarios, List<Funcionario> listaDeFuncionarios ) {
+        this.idBiblioteca = idBiblioteca;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.listaDeLivros = listaDeLivros;
+        this.listaDeUsuarios = listaDeUsuarios;
+        this.listaDeFuncionarios = listaDeFuncionarios ;
+    }
+
 }

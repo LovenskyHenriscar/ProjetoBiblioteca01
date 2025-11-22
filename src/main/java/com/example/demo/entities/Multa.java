@@ -12,9 +12,23 @@ public class Multa {
     @Column(length = 11)
     private Long idMulta;
    private Integer valor;
- private Date dataGeracao;
- private String motivo;
- private String pago;
+   private Date dataGeracao;
+   private String motivo;
+   private String pago;
 
+
+   public Multa(){
+
+   }
+
+    public Multa(Long idMulta,Integer valor,Date dataGeracao,String motivo,String pago){
+
+        this.idMulta=idMulta;
+        this.valor=valor;
+        this.dataGeracao=dataGeracao;
+        this.motivo=motivo;
+        this.pago=pago;
+
+    }
 
 }

@@ -1,6 +1,7 @@
 package com.example.demo.entities;
 
 import jakarta.persistence.*;
+import org.aspectj.weaver.patterns.ThisOrTargetPointcut;
 
 import java.util.Date;
 
@@ -17,5 +18,19 @@ public class Emprestimo {
     private String status;
     private String livro;
     private String usuario;
+
+    public Emprestimo(){}
+
+    public Emprestimo(Long idEmprestimo,Date dataEmprestimo,Date dataDevolucaoPrevista,Date dataDevolucaoReal,String status,String livro,String usuario)
+    {
+        this.idEmprestimo=idEmprestimo;
+        this.dataEmprestimo=dataEmprestimo;
+        this.dataDevolucaoPrevista=dataDevolucaoPrevista;
+        this.dataDevolucaoReal=dataDevolucaoReal;
+        this.status=status;
+        this.livro=livro;
+        this.usuario=usuario;
+
+    }
 
 }

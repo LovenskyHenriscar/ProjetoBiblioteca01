@@ -19,4 +19,23 @@ public class Livro {
     private Double quantidadeExemplares;
     private Double exemplaresDisponiveis;
 
+    public Livro(){
+
+    }
+
+    public  Livro( Long idLivro, String titulo,String autor,String editora,
+                   Date anoPublicacao, String isbn,String genero,
+                   Double quantidadeExemplares,Double exemplaresDisponiveis){
+
+        this.idLivro=idLivro;
+        this.titulo=titulo;
+        this.autor= autor;
+        this.editora=editora;
+        this.anoPublicacao=anoPublicacao;
+        this.isbn=isbn;
+        this.genero=genero;
+        this.quantidadeExemplares= quantidadeExemplares;
+        this.exemplaresDisponiveis=exemplaresDisponiveis;
+    }
+
 }

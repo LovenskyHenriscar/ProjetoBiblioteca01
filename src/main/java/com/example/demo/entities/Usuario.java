@@ -19,4 +19,24 @@ public class Usuario {
 
 
 
+
+
+    public Usuario() {
+    }
+
+    // Construtor com argumentos
+    public Usuario(Long idUsuario, String nome,String cpf,String endereco,String telefone,String email,Date dataCadastro,Double emprestimosAtivos) {
+        this.idUsuario = idUsuario;
+        this.nome=nome;
+        this.cpf=cpf;
+        this.endereco=endereco;
+        this.telefone=telefone;
+        this.email=email;
+        this.dataCadastro=dataCadastro;
+        this.emprestimosAtivos=emprestimosAtivos;
+
+    }
+
 }
+
+

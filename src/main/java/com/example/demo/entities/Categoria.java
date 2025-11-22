@@ -13,4 +13,16 @@ public class Categoria {
     private String descricao;
     private String  livros;
 
+
+    public Categoria() {
+    }
+
+    // Construtor parametrizado
+    public Categoria(Long idCategoria, String nome, String descricao, String livros) {
+        this.idCategoria = idCategoria;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.livros = livros;
+    }
+
 }
