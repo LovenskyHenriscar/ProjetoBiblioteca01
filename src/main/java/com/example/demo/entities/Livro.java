@@ -1,7 +1,6 @@
 package com.example.demo.entities;
 import jakarta.persistence.*;
 
-import java.time.Instant;
 import java.util.Date;
 
 @Entity
@@ -27,15 +26,86 @@ public class Livro {
                    Date anoPublicacao, String isbn,String genero,
                    Double quantidadeExemplares,Double exemplaresDisponiveis){
 
-        this.idLivro=idLivro;
-        this.titulo=titulo;
-        this.autor= autor;
-        this.editora=editora;
-        this.anoPublicacao=anoPublicacao;
-        this.isbn=isbn;
-        this.genero=genero;
-        this.quantidadeExemplares= quantidadeExemplares;
-        this.exemplaresDisponiveis=exemplaresDisponiveis;
+        this.setIdLivro(idLivro);
+        this.setTitulo(titulo);
+        this.setAutor(autor);
+        this.setEditora(editora);
+        this.setAnoPublicacao(anoPublicacao);
+        this.setIsbn(isbn);
+        this.setGenero(genero);
+        this.setQuantidadeExemplares(quantidadeExemplares);
+        this.setExemplaresDisponiveis(exemplaresDisponiveis);
     }
 
+    public Long getIdLivro() {
+        return idLivro;
+    }
+
+    public void setIdLivro(Long idLivro) {
+        this.idLivro = idLivro;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getEditora() {
+        return editora;
+    }
+
+    public void setEditora(String editora) {
+        this.editora = editora;
+    }
+
+    public Date getAnoPublicacao() {
+        return anoPublicacao;
+    }
+
+    public void setAnoPublicacao(Date anoPublicacao) {
+        this.anoPublicacao = anoPublicacao;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public Double getQuantidadeExemplares() {
+        return quantidadeExemplares;
+    }
+
+    public void setQuantidadeExemplares(Double quantidadeExemplares) {
+        this.quantidadeExemplares = quantidadeExemplares;
+    }
+
+    public Double getExemplaresDisponiveis() {
+        return exemplaresDisponiveis;
+    }
+
+    public void setExemplaresDisponiveis(Double exemplaresDisponiveis) {
+        this.exemplaresDisponiveis = exemplaresDisponiveis;
+    }
 }
