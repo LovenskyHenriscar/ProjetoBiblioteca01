@@ -3,23 +3,23 @@ package com.example.demo.entities;
 import jakarta.persistence.*;
 
 @Entity
-public class Editora {
+public class Editoria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(length = 11)
-    private Long idEditora;
+    private Long idEditoria;
     private String nome;
     private String cnpj;
     private String endereco;
     private String telefone;
 
-    public Editora() {
+    public Editoria() {
     }
 
     // Construtor parametrizado
-    public Editora(Long idEditora, String nome, String cnpj, String endereco, String telefone) {
-        this.idEditora = idEditora;
+    public Editoria(Long idEditora, String nome, String cnpj, String endereco, String telefone) {
+        this.idEditoria = idEditora;
         this.nome = nome;
         this.cnpj = cnpj;
         this.endereco = endereco;
@@ -29,11 +29,11 @@ public class Editora {
 
     // Getters e setters
     public Long getIdEditora() {
-        return idEditora;
+        return idEditoria;
     }
 
     public void setIdEditora(Long idEditora) {
-        this.idEditora = idEditora;
+        this.idEditoria = idEditora;
     }
 
     public String getNome() {
